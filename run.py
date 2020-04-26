@@ -1,7 +1,5 @@
 from flask import Flask,jsonify,make_response
 from tools import render_result
-# 导入oh模块
-from OneHope import app_oh
 # 导入 demo1 子模块
 from demo1 import demo1_app
 # 导入 demo2 子模块
@@ -12,7 +10,6 @@ app = Flask(__name__)
 
 
 # 注册蓝图 引入子模块
-app.register_blueprint(app_oh,url_prefix='/oh')
 app.register_blueprint(demo1_app,url_prefix='/demo1')
 app.register_blueprint(demo2_app,url_prefix='/demo2')
 
@@ -77,5 +74,5 @@ def internal_err(e):
 
 
 if __name__ == '__main__':
-    # print(app.url_map)  # url_map 打印所有路由信息
+    print(app.url_map)  # url_map 打印所有路由信息
     app.run(host='0.0.0.0',port=5000,debug=True)
