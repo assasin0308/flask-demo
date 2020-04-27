@@ -1,3 +1,9 @@
+# -*- coding:utf-8 -*-
+# @Time: 2020/4/27 16:29
+# @Author: assasin
+# @Email: assasin0308@sina.com
+
+
 from flask import jsonify
 
 # return josn data

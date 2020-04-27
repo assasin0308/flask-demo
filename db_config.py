@@ -1,4 +1,7 @@
-# coding:utf-8
+# -*- coding:utf-8 -*-
+# @Time: 2020/4/27 16:29
+# @Author: assasin
+# @Email: assasin0308@sina.com
 
 # mysql-config
 MYSQL_DB_DEFAULT = {
@@ -24,4 +27,6 @@ MONGODB_DB = {
     'password' : '',
     'db_name' : ''
 }
+
+"""......此处省略一万个配置dict"""
 

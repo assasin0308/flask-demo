@@ -1,3 +1,8 @@
+# -*- coding:utf-8 -*-
+# @Time: 2020/4/27 16:29
+# @Author: assasin
+# @Email: assasin0308@sina.com
+
 from flask import Flask,jsonify,make_response,current_app
 from tools import render_result
 # 导入 demo1 子模块

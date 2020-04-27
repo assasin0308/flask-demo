@@ -1,6 +1,11 @@
+# -*- coding:utf-8 -*-
+# @Time: 2020/4/27 16:29
+# @Author: assasin
+# @Email: assasin0308@sina.com
+
 import pymysql
 pymysql.install_as_MySQLdb()
-# from db_config import MYSQL_DB_DEFAULT
+from db_config import MYSQL_DB_DEFAULT
 
 
 # 单例模式 MySQL数据库连接
@@ -94,6 +99,8 @@ class MysqlConn(object):
         self.cursor.close()
         self.connection.close()
 
+    """......此处省略一万个方法"""
+
 # conn1 = MysqlConn(MYSQL_DB_DEFAULT)
-# result = conn1.select(" select * from users  ")
+# result = conn1.row(" select * from user  where  id = 2 ")
 # print(result)

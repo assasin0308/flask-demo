@@ -1,3 +1,8 @@
+# -*- coding:utf-8 -*-
+# @Time: 2020/4/27 16:29
+# @Author: assasin
+# @Email: assasin0308@sina.com
+
 # pip install pymongo
 # 无安全认证
 # client = MongoClient('mongodb://localhost:27017')
@@ -16,6 +21,8 @@ class MongodbConn(object):
         else:
             self.client = MongoClient("mongodb://" + mongo_auth_user + ':' + mongo_auth_passwd + '@'
                                       +  mongo_conn_params.get('host') + ':' + mongo_conn_params.get('port') + '/' + mongo_db_name )
+
+    """......此处省略一万个方法"""
 
 
 # 获取客户端,建立连接
