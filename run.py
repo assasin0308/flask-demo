@@ -38,7 +38,7 @@ def request_not_found(e):
 def method_err(e):
     resp_data = {
         "errcode": 405,
-        "errmsg": "405 Method Not Allowed,The method is not allowed for the requested URL! ",
+        "errmsg": " 405 Method Not Allowed,The method is not allowed for the requested URL! ",
         "data": ""
     }
     return make_response(jsonify(resp_data)), 405
