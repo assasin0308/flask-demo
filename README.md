@@ -170,3 +170,10 @@ if __name__ == '__main__':
     app.run('0.0.0.0',port=5001)
 ```
 
+### 3. SSDB
+
+```json
+# SSDB 一个高性能的支持丰富数据结构的 NoSQL 数据库, 用于替代 Redis.
+# https://github.com/ideawu/ssdb/tree/master/api/python
+```
+
